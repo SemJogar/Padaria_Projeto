@@ -1,2 +1,2 @@
 # Padaria_Projeto
-Projeto da Faculdade em parceria com ...
+Projeto da Faculdade em parceria com EdJunior
