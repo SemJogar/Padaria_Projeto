@@ -6,7 +6,7 @@
             $dbusername = 'root';
             $password = 'usbw';
             $database = 'padaria';
-            //tabela = produtos
+// ATENÇÃO!!!!! ----> TABELA = 'produtos' <---- ATENÇÃO!!!!!  
             $conn = new mysqli($hostname, $dbusername, $password, $database);
             if ($conn->connect_error) {
                 die("Conexão falhou: " . $conn->connect_error);

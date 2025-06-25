@@ -2,8 +2,8 @@
     require_once __DIR__ . '/../util/conexao.php';
     require_once __DIR__ . '/../models/produto.php';
     class produtoDAO{
-        //o listar está com as () vazias,
-        //pois não necessita de parametro para funcionar
+        /*o listar está com as () vazias,
+        pois não necessita de parametro para funcionar*/
         public function listar()
         {
             $conn = conexao::getConexao();
