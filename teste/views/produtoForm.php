@@ -1,7 +1,6 @@
 <?php
-if (!isset($produto) && isset($GLOBALS['produto'])) {
-    $produto = $GLOBALS['produto'];
-}
+$produto = $produto ?? $GLOBALS['produto'] ?? null;
+//ele define a variavel produto como null,antes de ser usada
 ?>
 <!DOCTYPE html>
 <html>
