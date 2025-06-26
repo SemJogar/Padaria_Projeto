@@ -17,6 +17,15 @@
                 $produto = new produto();
                 $produto->setId($row['id']);
                 $produto->setNome($row['nome']);
+                $produto->setBarcode($row['barcode']);
+                $produto->setComponentes($row['componentes']);
+                $produto->setPreco($row['preco']);
+                $produto->setCusto($row['custo']);
+                $produto->setLucro($row['lucro']);
+                $produto->setQuantidade($row['quantidade']);
+                $produto->setEstoqueMinimo($row['estoqueminimo']);
+                $produto->setValidade($row['validade']);
+                $produto->setFornecedor($row['fornecedor']);
                 $produtos[] = $produto;
             }
             $conn->close();
