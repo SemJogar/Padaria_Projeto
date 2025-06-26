@@ -10,11 +10,11 @@ $produto = $produto ?? $GLOBALS['produto'] ?? null;
         </h1><br><br>
         <form action="index.php?action=<?= $produto ? 'editar' : 'criar'; ?>" method="post">
             <?php if ($produto): ?>
-                <input type="hidden" name="id" value="<?php echo htmlspecialchars($produto->getId()); ?>">
+                <input type="hidden" name="id" value="<?php echo htmlspecialchars($Produto->getId()); ?>">
             <?php endif; ?>
             <label for="nome">Nome:</label>
             <input type="text" id="nome" name="nome"
-            value="<?php echo $produto ? htmlspecialchars($produto->getNome()) : ''; ?>" required>
+            value="<?php echo $produto ? htmlspecialchars($Produto->getNome()) : ''; ?>" required>
             <button type="submit"><?php echo $produto ? 'Salvar' : 'Adicionar'; ?></button>
         </form>
     </body>
